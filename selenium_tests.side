@@ -66,7 +66,7 @@
         ["linkText=Go Back", "linkText"],
         ["css=a", "css:finder"],
         ["xpath=//a[contains(text(),'Go Back')]", "xpath:link"],
-        ["xpath=//a[contains(@href, 'index.html')]", "xpath:href"],
+        ["xpath=//a[contains(@href, 'index.jsp')]", "xpath:href"],
         ["xpath=//a", "xpath:position"],
         ["xpath=//a[contains(.,'Go Back')]", "xpath:innerText"]
       ],
@@ -169,6 +169,6 @@
     "timeout": 300,
     "tests": ["ce0266db-2bbf-40e3-b9a1-9dd8e78d6b4a"]
   }],
-  "urls": [],
+  "urls": ["http://localhost:8080/adam_ahmad/"],
   "plugins": []
 }
