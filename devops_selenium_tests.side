@@ -1,0 +1,174 @@
+{
+  "id": "a5086b68-33d7-4985-8120-49eabc3268d4",
+  "version": "2.0",
+  "name": "devops_selenium_tests",
+  "url": "http://localhost:8080/adam_ahmad/",
+  "tests": [{
+    "id": "ce0266db-2bbf-40e3-b9a1-9dd8e78d6b4a",
+    "name": "tests.side",
+    "commands": [{
+      "id": "cf4c01de-1e05-4944-8782-645b8c825980",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/adam_ahmad/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6f03cae7-1f94-40cf-a413-53ff0cb878a0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1660x990",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d25933d8-c1ab-45ea-a349-38f13763a7c8",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ce4fd08-7768-4209-aa68-ebb8f96efdc9",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Adam"
+    }, {
+      "id": "effaa2f9-39a4-4e31-8f95-ab649abb447d",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(6)",
+      "targets": [
+        ["css=input:nth-child(6)", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "99db8c53-892d-4252-b6c8-dc13013610dc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Go Back",
+      "targets": [
+        ["linkText=Go Back", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Go Back')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'index.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Go Back')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8652af9-b647-41b0-a0fc-e6d4254eb4b7",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "38a928d7-6422-4045-b097-1fd4a85c93f5",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Adam"
+    }, {
+      "id": "7ed267a9-5d81-4fc2-8e75-bb32107bebf8",
+      "comment": "",
+      "command": "click",
+      "target": "css=form",
+      "targets": [
+        ["css=form", "css:finder"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f43c1255-6c79-4c13-a0f0-23cd6ba890a3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Visit MTA Official Website",
+      "targets": [
+        ["linkText=Visit MTA Official Website", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Visit MTA Official Website')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://www.mta.ac.il/')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Visit MTA Official Website')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win8827",
+      "windowTimeout": 2000
+    }, {
+      "id": "5b3ff8fe-0b37-4178-9a7c-ff02a56582fd",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6570e44b-4fac-4213-9d52-416d2420b6c6",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win8827}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ce42c774-4b55-458b-893c-5a41e5256164",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,100)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "223fa16f-ef38-4696-ab2e-5a9a47da66e8",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2bcb0f17-f38f-4c55-91b6-150c28c4c8d2",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win8827}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "034d7854-883e-41eb-b383-3accd0c75cb1",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ce0266db-2bbf-40e3-b9a1-9dd8e78d6b4a"]
+  }],
+  "urls": [],
+  "plugins": []
+}
