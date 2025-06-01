@@ -4,7 +4,7 @@
     <title>MTA DevOps WebApp</title>
 </head>
 <body>
-    <h1>Welcome to MTA DevOps Web Application version 2!</h1>
+    <h1>Welcome to MTA DevOps Web Application version 3!</h1>
     
     <!-- Text Input -->
     <form action="submit.jsp" method="post">
