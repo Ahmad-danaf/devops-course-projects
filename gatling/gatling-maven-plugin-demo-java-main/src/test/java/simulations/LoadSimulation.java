@@ -1,10 +1,15 @@
 package simulations;
 
-import io.gatling.javaapi.core.*;
-import io.gatling.javaapi.http.*;
+import java.time.Duration;
 
-import static io.gatling.javaapi.core.CoreDsl.*;
-import static io.gatling.javaapi.http.HttpDsl.*;
+import static io.gatling.javaapi.core.CoreDsl.constantUsersPerSec;
+import static io.gatling.javaapi.core.CoreDsl.exec;
+import static io.gatling.javaapi.core.CoreDsl.scenario;
+import io.gatling.javaapi.core.ScenarioBuilder;
+import io.gatling.javaapi.core.Simulation;
+import static io.gatling.javaapi.http.HttpDsl.http;
+import static io.gatling.javaapi.http.HttpDsl.status;
+import io.gatling.javaapi.http.HttpProtocolBuilder;
 
 public class LoadSimulation extends Simulation {
 
@@ -24,7 +29,7 @@ public class LoadSimulation extends Simulation {
     {
         setUp(
             scn.injectOpen(
-                constantUsersPerSec(1).during(30)
+                constantUsersPerSec(5).during(Duration.ofMinutes(5)) // 5 minutes
             )
         ).protocols(httpProtocol);
     }
