@@ -1,0 +1,20 @@
+Explanation of the Results – Analysis and Guess
+
+The results of the Gatling tests show that most requests received HTTP status 304 or faced connection errors. Here’s why:
+
+Status 304 ("Not Modified"): This status indicates that the browser (or Gatling) has cached the requested resources and the server responded without re-sending the full content. It’s not an error but shows that the server’s load is handled differently under caching scenarios.
+
+Connection refused errors: These happen because the server (Tomcat on port 8888) was overwhelmed by too many requests, reaching the system’s network and thread pool limits.
+
+What likely happened: The Tomcat server’s thread pool and the host machine’s TCP connection limits were saturated. As more virtual users connected in parallel (up to 5,000 RPS in the peak), the server was unable to respond in time. It led to refused connections and a sharp increase in 304 responses (where the browser considered the file unchanged).
+
+The combination of:
+
+small number of successful requests (indicating true maximum capacity),
+
+a large number of connection errors,
+
+and 304s from caching
+
+demonstrates that the server’s capacity is quickly exhausted and its ability to serve fresh content is reduced under high concurrent load.
+

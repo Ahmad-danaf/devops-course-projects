@@ -1,0 +1,11 @@
+The maximum load test (Max Limit) for the application was conducted using Gatling and analyzed based on the summary and statistics from the `MaxLoadTest.pdf`. During this test, the application was subjected to a high load of constant requests to determine its capacity threshold.
+
+From the results
+- The total number of requests was 400, with 100% success rate (400400 successful responses).
+- The maximum response time reached up to 282 ms, with an average of 35 ms.
+- No failures were encountered, indicating the application handled the load successfully during this simulation.
+
+Conclusion
+The application’s maximum limit during this Gatling simulation was 400 simultaneous requests without any failures. This means that, based on the current configuration and hardware, the system can support up to 400 requests concurrently with consistent response times and no breakdowns.
+
+The measurement was derived from the detailed statistics in the report number of requests, response times, and error rates. These results confirm that the tested load is the maximum sustained level of traffic the application can handle under the current setup.

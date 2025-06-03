@@ -1,0 +1,24 @@
+This PDF report contains the summary of the stress test performed using Gatling. It shows how the application behaves under a high level of traffic load for approximately 4 minutes.
+
+Key observations from the stress test:
+
+The test executed 12,120 requests with no failed requests (0% KO).
+
+Response time distribution:
+
+Minimum response time: 1 ms.
+
+Maximum response time: 42 ms.
+
+Mean response time: 5 ms.
+
+Standard deviation: 2 ms.
+
+Throughput peaked at 50.5 requests/second.
+
+The 99th percentile response time was 9 ms, indicating very stable performance.
+
+The system handled the increasing load without any failures, confirming robustness under stress.
+
+The stress test pushes the system beyond typical user traffic levels to identify performance bottlenecks or stability issues. The successful run here demonstrates the application’s capability to maintain consistent response times even under aggressive traffic bursts.
+

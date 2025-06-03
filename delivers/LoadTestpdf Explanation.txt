@@ -1,0 +1,14 @@
+his document summarizes the Load Test results for the web application (index.html endpoint), conducted using Gatling. The test simulated constant load of 1 user/sec for a duration of 30 seconds. The key details include:
+
+Total Requests: 3,000, all successful (no errors).
+
+Min Response Time: 2 ms; Max Response Time: 152 ms.
+
+Average Response Time: 3 ms, with 99th percentile at 9 ms.
+
+Throughput: ~100 requests per second at peak load.
+
+Validation: All HTTP 200 OK.
+
+This load test confirmed that the application could handle a steady load without performance degradation or errors, demonstrating good reliability at low-to-moderate traffic levels.
+

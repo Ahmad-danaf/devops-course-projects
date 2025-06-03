@@ -1,0 +1,14 @@
+
+The maximum load limit of the application was determined by analyzing the results of the Gatling Max Load Test. During this test, we gradually increased the number of users per second until the application began to show signs of instability and errors.
+
+Based on the data:
+
+The test injected 1,500,000 requests in total.
+
+The majority of these requests (99.91%) failed due to connection errors (Connection refused) and HTTP status 304 responses.
+
+Only a small fraction (1,419 requests) succeeded.
+
+This behavior indicates that the maximum limit of the application is around 1,400 successful requests before connection errors and redirection (304) issues arise. It suggests that the system can handle a modest load (~4.67 requests/sec at peak) before failing.
+
+We concluded that the max limit is the point at which the server stopped responding correctly to the load, as indicated by the overwhelming number of failed requests and low successful request count.
